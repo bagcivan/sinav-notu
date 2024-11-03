@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
           content: [
             {
               type: "text",
-              text: "Bu sınav kağıdındaki el yazısı ile yazılmış sınav notlarını alabilir misin? Sadece soru numaralarını ve puanlarını JSON formatında gönder.{\"1\":\"5\",\"2\":\"7\"} gibi. Herhangi bir yorum yapma sadece sonucu göster"
+              text: "Bu sınav kağıdındaki el yazısı ile yazılmış sınav notlarını alabilir misin? Eğer soru puanı yoksa ya da sadece soru üzerine çizgi çekildiyse puan 0 (sıfır) olur. Sadece soru numaralarını ve puanlarını JSON formatında gönder.{\"1\":\"5\",\"2\":\"7\"} gibi. Herhangi bir yorum yapma sadece sonucu göster"
             },
             {
               type: "image_url",
